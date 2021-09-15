@@ -22,7 +22,7 @@ const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
   const manager = new BleManager();
   // manager.state().then(x => console.log('x: ', x));
-
+  console.log('manager: ', manager);
   return (
     <View style={styles.sectionContainer}>
       <Text
